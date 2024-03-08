@@ -8,7 +8,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "mocha-test": "mocha tests/mocha_test.test.js"
   },
   "repository": {
     "type": "git",
