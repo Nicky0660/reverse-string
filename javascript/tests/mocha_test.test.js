@@ -22,3 +22,21 @@ describe('Reverse String', function() {
     assert.strictEqual(reverseString('This has multiple words'), 'sdrow elpitlum sah sihT');
   });
 });
+
+// test cases for Palindrome behaviors
+
+const { isPalindrome } = require('../reverse_string');
+
+describe('isPalindrome', function() {
+  it('should ignore white space, special characters, and punctuation', function() {
+
+    assert.strictEqual(isPalindrome("A man, a plan, a canal, Panama"), true);
+    assert.strictEqual(isPalindrome("Madam, in Eden I'm Adam"), true);
+    assert.strictEqual(isPalindrome("racecar"), true);
+
+
+    assert.strictEqual(isPalindrome("hello"), false);
+    assert.strictEqual(isPalindrome("Palindrome test"), false);
+    assert.strictEqual(isPalindrome("12321a"), false);
+  });
+});
